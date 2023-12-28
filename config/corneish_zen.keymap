@@ -59,20 +59,22 @@
         };
 
 combos {
-            l_and_semi: combo {
-                compatible = "zmk,combo";
-                timeout-ms = <22>; // Adjust as needed
-                bindings = <&kp L &kp SEMI>;
-                label = "L + SEMI to Return";
-                press = <&kp RET>;
-                };
-            ctrl_backsp: combo {
-                compatible = "zmk,combo";
-                timeout-ms = <22>;
-                bindings = <&kp J &kp K>;
-                label = "JK to Ctrl+Backspace";
-                press = <&kp LC(BSPC)>;
-                };
-   
+    compatible = "zmk,combos";
+
+    l_and_semi {
+        timeout-ms = <22>;
+        key-positions = <&kp L &kp SEMI>;
+        bindings = <&kp RET>;
+    };
+
+    ctrl_backsp {
+        timeout-ms = <22>;
+        key-positions = <&kp J &kp K>;
+        bindings = <&kp LC(BSPC)>;
+    };
+
+    // Add additional combos here with the same format
+    // ...
+
         };
 };
