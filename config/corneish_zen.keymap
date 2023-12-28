@@ -63,13 +63,13 @@ combos {
 
     l_and_semi {
         timeout-ms = <22>;
-        key-positions = <23 24>; // Update these numbers to the correct key positions
+        key-positions = <4 5>; // Update these numbers to the correct key positions
         bindings = <&kp RET>;
     };
 
     ctrl_backsp {
         timeout-ms = <22>;
-        key-positions = <22 23>; // Update these numbers to the correct key positions
+        key-positions = <8 9>; // Update these numbers to the correct key positions
         bindings = <&kp LC(BSPC)>;
     };
 
