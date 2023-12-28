@@ -84,8 +84,8 @@ combos {
     };
             backsp3 {
         timeout-ms = <22>;
-        key-positions = <18 19>; // Update these numbers to the correct key positions
-        bindings = <&kp LC(BSPC)>;
+        key-positions = <20 21>; // Update these numbers to the correct key positions
+        bindings = <&kp BSPC>;
     };
     // Add additional combos here with the same format
     // ...
