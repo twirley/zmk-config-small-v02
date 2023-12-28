@@ -105,7 +105,7 @@ combos {
         press = <&kp LC(Z)>;
     };
 
-    combo_bksp: combo {
+    combo_deltee: combo {
         compatible = "zmk,combo";
         timeout-ms = <22>;
         bindings = <&kp K &kp L>;
