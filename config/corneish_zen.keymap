@@ -21,10 +21,10 @@
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | LWR | SHFT |   | SPC | RSE  | ALT |
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    
-   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI 
-   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH 
-                  &kp LCTRL &mo 1 &kp LSHFT   &kp SPACE &mo 2 &kp RALT
+   &kp Q   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp Q
+   &kp Q   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp Q
+   &kp Q   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp Q
+                &kp LCTRL &mo 1 &kp LSHFT   &kp SPACE &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
@@ -35,9 +35,9 @@
 // |     |     |     |     |     |   |     |     |     |     |     |      
 //             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans 
-   &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans 
+   &kp Q   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0&kp Q
+  &kp Q    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp Q
+&kp Q      &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &kp Q
  	        &kp LGUI     &trans       &trans      &trans      &trans     &kp RALT
                         >;
                 };
@@ -50,9 +50,9 @@
 // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR 
-   &trans &trans &trans   &trans   &trans      &kp MINUS &kp PLUS  &kp LBKT &kp RBKT &kp BSLH 
-   &trans   &trans &trans   &trans   &trans      &kp UNDER &kp EQUAL &kp LBRC &kp RBRC &kp PIPE 
+  &kp Q    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR &kp Q
+   &kp Q   &trans &trans &trans   &trans   &trans      &kp MINUS &kp PLUS  &kp LBKT &kp RBKT &kp BSLH &kp Q
+&kp Q      &trans   &trans &trans   &trans   &trans      &kp UNDER &kp EQUAL &kp LBRC &kp RBRC &kp PIPE &kp Q
             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
             >;
                 };
@@ -63,13 +63,13 @@ combos {
 
     l_and_semi {
         timeout-ms = <22>;
-        key-positions = <18 19>; // Update these numbers to the correct key positions
+        key-positions = <23 24>; // Update these numbers to the correct key positions
         bindings = <&kp RET>;
     };
 
     ctrl_backsp {
         timeout-ms = <22>;
-        key-positions = <16 17>; // Update these numbers to the correct key positions
+        key-positions = <22 23>; // Update these numbers to the correct key positions
         bindings = <&kp LC(BSPC)>;
     };
 
