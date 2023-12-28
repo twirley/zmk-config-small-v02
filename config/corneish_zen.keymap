@@ -66,7 +66,7 @@ combos {
                 label = "L + SEMI to Return";
                 press = <&kp RET>;
             };
-            combo_ctrl_bksp: combo {
+            ctrl_backsp: combo {
         compatible = "zmk,combo";
         timeout-ms = <22>;
         bindings = <&kp J &kp K>;
