@@ -38,7 +38,7 @@
    &kp Q   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0&kp Q
   &kp Q    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &kp Q
 &kp Q      &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &kp Q
- 	        &kp LGUI     &trans       &trans      &trans      &trans     &kp RALT
+ 	        &trans      &trans       &trans      &trans      &trans     &kp RALT
                         >;
                 };
 
@@ -61,32 +61,32 @@
 combos {
     compatible = "zmk,combos";
 
-    l_and_semi {
+        tst_combo {
         timeout-ms = <22>;
         key-positions = <4 5>; // Update these numbers to the correct key positions
         bindings = <&kp RET>;
     };
-
-    ctrl_backsp {
-        timeout-ms = <22>;
-        key-positions = <8 9>; // Update these numbers to the correct key positions
-        bindings = <&kp LC(BSPC)>;
-    };
-    l_and_semi2 {
-        timeout-ms = <22>;
-        key-positions = <21 22>; // Update these numbers to the correct key positions
-        bindings = <&kp RET>;
-    };
-        ctrl_backsp2 {
+        ctrl_backsp {
         timeout-ms = <22>;
         key-positions = <19 20>; // Update these numbers to the correct key positions
         bindings = <&kp LC(BSPC)>;
     };
-            backsp3 {
+        backsp {
         timeout-ms = <22>;
         key-positions = <20 21>; // Update these numbers to the correct key positions
         bindings = <&kp BSPC>;
     };
+        return_key {
+        timeout-ms = <22>;
+        key-positions = <21 22>; // Update these numbers to the correct key positions
+        bindings = <&kp RET>;
+    };
+        home_enter_up {
+        timeout-ms = <22>;
+        key-positions = <33 34>; // Update these numbers to the correct key positions
+        bindings = <&kp HOME &kp RET &kp UP>;
+    };
+
     // Add additional combos here with the same format
     // ...
 
