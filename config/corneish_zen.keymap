@@ -72,7 +72,21 @@ combos {
         key-positions = <8 9>; // Update these numbers to the correct key positions
         bindings = <&kp LC(BSPC)>;
     };
-
+    l_and_semi2 {
+        timeout-ms = <22>;
+        key-positions = <19 20>; // Update these numbers to the correct key positions
+        bindings = <&kp RET>;
+    };
+        ctrl_backsp2 {
+        timeout-ms = <22>;
+        key-positions = <17 18>; // Update these numbers to the correct key positions
+        bindings = <&kp LC(BSPC)>;
+    };
+            backsp3 {
+        timeout-ms = <22>;
+        key-positions = <18 19>; // Update these numbers to the correct key positions
+        bindings = <&kp LC(BSPC)>;
+    };
     // Add additional combos here with the same format
     // ...
 
