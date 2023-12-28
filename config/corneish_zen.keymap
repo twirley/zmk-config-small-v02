@@ -63,7 +63,7 @@ combos {
 
         tst_combo {
         timeout-ms = <22>;
-        key-positions = <4 5>; // Update these numbers to the correct key positions
+        key-positions = <4 5>; // they seem "right" - because we start with 0, not 1...
         bindings = <&kp RET>;
     };
         ctrl_backsp {
@@ -78,7 +78,7 @@ combos {
     };
         return_key {
         timeout-ms = <22>;
-        key-positions = <21 22>; // Update these numbers to the correct key positions
+        key-positions = <21 22>; // for next row, for some reason, add 12!
         bindings = <&kp RET>;
     };
         home_enter_up {
