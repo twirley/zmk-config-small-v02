@@ -61,28 +61,28 @@
 combos {
             l_and_semi: combo {
                 compatible = "zmk,combo";
-                timeout-ms = <50>; // Adjust as needed
+                timeout-ms = <22>; // Adjust as needed
                 bindings = <&kp L &kp SEMI>;
                 label = "L + SEMI to Return";
                 press = <&kp RET>;
             };
             combo_ctrl_bksp: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp J &kp K>;
         label = "JK to Ctrl+Backspace";
         press = <&kp LC(BSPC)>;
     };
     combo_ctrl_left: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp A &kp S>;
         label = "AS to Ctrl+Left";
         press = <&kp LC(LEFT)>;
     };
     combo_home_enter_up: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp DOT &kp FSLH>;
         label = "Period and Slash to Home+Enter+Up";
         press = <&kp HOME &kp RET &kp UP>;
@@ -91,7 +91,7 @@ combos {
     // Continuation of combos
     combo_ctrl_right: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp D &kp F>;
         label = "DF to Ctrl+Right";
         press = <&kp LC(RIGHT)>;
@@ -99,7 +99,7 @@ combos {
 
     combo_ctrl_z: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp Y &kp U>;
         label = "YU to Ctrl+Z";
         press = <&kp LC(Z)>;
@@ -107,7 +107,7 @@ combos {
 
     combo_bksp: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp K &kp L>;
         label = "KL to Backspace";
         press = <&kp BSPC>;
@@ -115,7 +115,7 @@ combos {
 
     combo_shift_home: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp H &kp J &kp K>;
         label = "HJK to Shift+Home";
         press = <&kp LS(HOME)>;
@@ -123,7 +123,7 @@ combos {
 
     combo_esc: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp Q &kp W>;
         label = "QW to Escape";
         press = <&kp ESC>;
@@ -131,7 +131,7 @@ combos {
 
     combo_ctrl_shift_z: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp Y &kp U &kp I>;
         label = "YUI to Ctrl+Shift+Z";
         press = <&kp LCS(Z)>;
@@ -139,7 +139,7 @@ combos {
 
     combo_delete: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp H &kp J>;
         label = "HJ to Delete";
         press = <&kp DEL>;
@@ -147,7 +147,7 @@ combos {
 
     combo_shift_end: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp J &kp K &kp L>;
         label = "JKL to Shift+End";
         press = <&kp LS(END)>;
@@ -155,7 +155,7 @@ combos {
 
     combo_arrow_down: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp H &kp N>;
         label = "HN to Arrow Down";
         press = <&kp DOWN>;
@@ -163,7 +163,7 @@ combos {
 
     combo_arrow_up: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp H &kp Y>;
         label = "HY to Arrow Up";
         press = <&kp UP>;
@@ -171,7 +171,7 @@ combos {
 
     combo_tab: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp T &kp G>;
         label = "TG to Tab";
         press = <&kp TAB>;
@@ -179,7 +179,7 @@ combos {
 
     combo_bracket_open: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp F &kp G>;
         label = "FG to [";
         press = <&kp LBKT>;
@@ -187,7 +187,7 @@ combos {
 
     combo_quote: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp M &kp COMMA>;
         label = "M, to '";
         press = <&kp SQT>;
@@ -195,7 +195,7 @@ combos {
 
     combo_pipe: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp X &kp C>;
         label = "XC to |";
         press = <&kp PIPE>;
@@ -203,7 +203,7 @@ combos {
 
     combo_tilde: combo {
         compatible = "zmk,combo";
-        timeout-ms = <50>;
+        timeout-ms = <22>;
         bindings = <&kp X &kp N>;
         label = "XN to ~";
         press = <&kp TILDE>;
